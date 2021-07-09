@@ -1,0 +1,129 @@
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Elementos Base */
+
+body {
+    background: var(--preto);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.logo {
+    width: 160px;
+    padding: 15px;
+}
+
+header nav a {
+    color: rgb(214, 214, 214);
+    margin-right: 10px;
+    
+}
+
+header nav a:hover {
+    color: white;
+}
+
+/* Filme Principal */
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+        url("/assets/capa-house.jpg");
+
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin-bottom: 20px;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+    margin-top: 10px;
+
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    border-radius: 5px;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+.botao:hover{
+    color: black;
+    background-color: rgb(197, 197, 197);
+    transition: all 0.6s ease;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.filme-principal .container{
+    margin-left: 30px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+
+    cursor: pointer;
+}
+
+.box-filme:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all 0.6s ease;
+}
+
+.recomendados{
+    padding: 20px;
+    color: var(--vermelho);
+}
+
+.ativo{
+    background-color: var(--vermelho);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.ativo:hover{
+    background-color: rgb(121, 38, 24);
+    transition: all 0.4s ease;
+}
